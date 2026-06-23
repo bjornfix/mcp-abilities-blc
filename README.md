@@ -8,7 +8,7 @@ Broken Link Checker (BLC) abilities for MCP. List broken links, replace URLs in 
 [![PHP](https://img.shields.io/badge/PHP-8.0%2B-purple.svg)](https://php.net)
 
 **Tested up to:** 7.0
-**Stable tag:** 0.1.4
+**Stable tag:** 0.1.5
 **License:** GPLv2 or later
 **License URI:** https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,7 +16,7 @@ Broken Link Checker (BLC) abilities for MCP. List broken links, replace URLs in 
 
 Broken Link Checker (BLC) abilities for MCP. List broken links, replace URLs in content, auto-fix redirected links, and clear the BLC local queue.
 
-This plugin is part of the Devenia MCP abilities ecosystem. It gives an MCP-capable agent a focused, authenticated way to work with Broken Link Checker work inside WordPress through MCP.
+This plugin is part of the MCP abilities ecosystem. It gives an MCP-capable agent a focused, authenticated way to work with Broken Link Checker work inside WordPress through MCP.
 
 **Example:** "Handle this WordPress maintenance task directly." - The agent can inspect the site, call the relevant ability, and return the result without making the human click through wp-admin for every step.
 
@@ -124,7 +124,12 @@ The plugin is intended for authenticated MCP workflows. It does not replace edit
 
 ## Changelog
 
-### Current
+### 0.1.5
+
+- Shorten the readme summary so Plugin Check passes with zero warnings.
+- Align public release identity with the Basicus author/contributor rule.
+
+### 0.1.4
 
 - Documentation aligned with the public plugin README standard.
 
@@ -138,7 +143,7 @@ GPL-2.0+
 
 ## Author
 
-[Devenia](https://devenia.com) - We've been doing SEO and web development since 1993.
+[basicus](https://profiles.wordpress.org/basicus/)
 
 ## Links
 

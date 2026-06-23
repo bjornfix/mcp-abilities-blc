@@ -1,14 +1,14 @@
 === MCP Abilities - Broken Link Checker ===
-Contributors: devenia
+Contributors: basicus
 Tags: mcp, ai, broken links, seo
 Requires at least: 6.9
 Tested up to: 7.0
 Requires PHP: 8.0
-Stable tag: 0.1.4
+Stable tag: 0.1.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Expose Broken Link Checker (BLC) operations as MCP abilities: list broken links, replace broken URLs in content, auto-fix redirected links, and clear the local BLC queue.
+Broken Link Checker abilities for MCP: inspect links, repair URLs, auto-fix redirects, and clear the local queue.
 
 == Description ==
 
@@ -39,6 +39,10 @@ Requires:
 4. Install and activate this plugin.
 
 == Changelog ==
+
+= 0.1.5 =
+* Shorten the readme summary so Plugin Check passes with zero warnings.
+* Align public release identity with the Basicus author/contributor rule.
 
 = 0.1.4 =
 * Add BLC notification settings abilities for reading recipients and adding an email recipient across legacy and modern BLC options.

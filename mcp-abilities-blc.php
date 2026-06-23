@@ -2,10 +2,10 @@
 /**
  * Plugin Name: MCP Abilities - Broken Link Checker
  * Plugin URI: https://devenia.com
- * Description: Broken Link Checker (BLC) abilities for MCP. List broken links, replace URLs in content, auto-fix redirected links, and clear the BLC local queue.
- * Version: 0.1.4
- * Author: Devenia
- * Author URI: https://devenia.com
+ * Description: Broken Link Checker abilities for MCP: inspect links, repair URLs, auto-fix redirects, and clear the local queue.
+ * Version: 0.1.5
+ * Author: basicus
+ * Author URI: https://profiles.wordpress.org/basicus/
  * License: GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  * Requires at least: 6.9
