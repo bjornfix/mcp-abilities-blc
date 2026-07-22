@@ -8,7 +8,7 @@ Broken Link Checker (BLC) abilities for MCP. List broken links, replace URLs in 
 [![PHP](https://img.shields.io/badge/PHP-8.0%2B-purple.svg)](https://php.net)
 
 **Tested up to:** 7.0
-**Stable tag:** 0.1.6
+**Stable tag:** 0.1.7
 **License:** GPLv2 or later
 **License URI:** https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -123,6 +123,10 @@ If you skip base-stack verification and start with add-ons immediately, troubles
 The plugin is intended for authenticated MCP workflows. It does not replace editorial review: inspect the broken link, verify the replacement target, and then apply the smallest safe fix.
 
 ## Changelog
+
+### 0.1.7
+
+- Keep development-only contract tools out of release packages.
 
 ### 0.1.6
 

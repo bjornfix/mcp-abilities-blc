@@ -1,0 +1,4 @@
+/.gitattributes export-ignore
+/README.md export-ignore
+/tools export-ignore
+/tools/** export-ignore

@@ -3,7 +3,7 @@
  * Plugin Name: MCP Abilities - Broken Link Checker
  * Plugin URI: https://devenia.com
  * Description: Broken Link Checker abilities for MCP: inspect links, repair URLs, auto-fix redirects, and clear the local queue.
- * Version: 0.1.6
+ * Version: 0.1.7
  * Author: basicus
  * Author URI: https://profiles.wordpress.org/basicus/
  * License: GPL-2.0+
