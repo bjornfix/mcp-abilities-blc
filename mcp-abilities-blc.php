@@ -3,7 +3,7 @@
  * Plugin Name: MCP Abilities - Broken Link Checker
  * Plugin URI: https://devenia.com
  * Description: Broken Link Checker abilities for MCP: inspect links, repair URLs, auto-fix redirects, and clear the local queue.
- * Version: 0.1.5
+ * Version: 0.1.6
  * Author: basicus
  * Author URI: https://profiles.wordpress.org/basicus/
  * License: GPL-2.0+
@@ -1052,6 +1052,20 @@ function mcp_blc_add_notification_recipient_internal( string $email, bool $dry_r
 /**
  * Register BLC abilities.
  */
+function mcp_register_blc_ability_categories(): void {
+	if ( ! function_exists( 'wp_register_ability_category' ) || ( function_exists( 'wp_has_ability_category' ) && wp_has_ability_category( 'broken-link-checker' ) ) ) {
+		return;
+	}
+	wp_register_ability_category(
+		'broken-link-checker',
+		array(
+			'label'       => 'Broken Link Checker',
+			'description' => 'Abilities that inspect or repair links and Broken Link Checker state.',
+		)
+	);
+}
+add_action( 'wp_abilities_api_categories_init', 'mcp_register_blc_ability_categories' );
+
 function mcp_register_blc_abilities(): void {
 	if ( ! mcp_blc_check_dependencies() ) {
 		return;
@@ -1288,7 +1302,7 @@ function mcp_register_blc_abilities(): void {
 		array(
 			'label'               => 'Replace URL In Content',
 			'description'         => 'Replaces a URL across post/page content and excerpts for selected post types/statuses.',
-			'category'            => 'content',
+			'category'            => 'broken-link-checker',
 			'input_schema'        => array(
 				'type'                 => 'object',
 				'required'             => array( 'old_url', 'new_url' ),
@@ -1351,7 +1365,7 @@ function mcp_register_blc_abilities(): void {
 		array(
 			'label'               => 'Auto Fix Broken Links (Redirect Targets)',
 			'description'         => 'Uses BLC final_url/redirect_url suggestions to replace broken URLs in content, then optionally clears the BLC queue.',
-			'category'            => 'content',
+			'category'            => 'broken-link-checker',
 			'input_schema'        => array(
 				'type'                 => 'object',
 				'properties'           => array(

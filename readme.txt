@@ -4,7 +4,7 @@ Tags: mcp, ai, broken links, seo
 Requires at least: 6.9
 Tested up to: 7.0
 Requires PHP: 8.0
-Stable tag: 0.1.5
+Stable tag: 0.1.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -39,6 +39,10 @@ Requires:
 4. Install and activate this plugin.
 
 == Changelog ==
+
+= 0.1.6 =
+
+* Register the plugin-owned Broken Link Checker category before link-repair abilities.
 
 = 0.1.5 =
 * Shorten the readme summary so Plugin Check passes with zero warnings.
