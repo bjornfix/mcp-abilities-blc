@@ -4,6 +4,7 @@ Tags: mcp, ai, broken links, seo
 Requires at least: 6.9
 Tested up to: 7.0
 Requires PHP: 8.0
+Requires Plugins: broken-link-checker
 Stable tag: 0.1.7
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -27,13 +28,15 @@ Included abilities:
 
 Requires:
 
-* Abilities API plugin
+* WordPress 6.9 or newer with the Abilities API
 * MCP Adapter plugin (to expose abilities over MCP)
 * Broken Link Checker plugin (for BLC functionality)
 
+Download the stable plugin ZIP from https://downloads.devenia.com/mcp-abilities-blc.zip.
+
 == Installation ==
 
-1. Install and activate Abilities API.
+1. Use WordPress 6.9 or newer so the Abilities API is available.
 2. Install and activate MCP Adapter.
 3. Install and activate Broken Link Checker.
 4. Install and activate this plugin.

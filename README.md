@@ -2,7 +2,7 @@
 
 Broken Link Checker (BLC) abilities for MCP. List broken links, replace URLs in content, auto-fix redirected links, and clear the BLC local queue.
 
-[![GitHub release](https://img.shields.io/github/v/release/bjornfix/mcp-abilities-blc)](https://github.com/bjornfix/mcp-abilities-blc/releases)
+[![Stable download](https://img.shields.io/badge/download-stable%20ZIP-1e73be.svg)](https://downloads.devenia.com/mcp-abilities-blc.zip)
 [![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/gpl-2.0)
 [![WordPress](https://img.shields.io/badge/WordPress-6.9%2B-blue.svg)](https://wordpress.org)
 [![PHP](https://img.shields.io/badge/PHP-8.0%2B-purple.svg)](https://php.net)
@@ -11,6 +11,7 @@ Broken Link Checker (BLC) abilities for MCP. List broken links, replace URLs in 
 **Stable tag:** 0.1.7
 **License:** GPLv2 or later
 **License URI:** https://www.gnu.org/licenses/gpl-2.0.html
+**Tags:** mcp, ai, broken links, seo
 
 ## What It Does
 
@@ -83,27 +84,24 @@ It is especially useful when the manual version is repetitive enough that import
 
 ## Documentation
 
-Start with the main plugin page and base stack documentation:
+Use the product page and the official dependency documentation:
 
-- [MCP Expose Abilities](https://devenia.com/plugins/mcp-expose-abilities/)
-- [Plugin Page](https://devenia.com/plugins/mcp-expose-abilities/#add-ons)
-- [Getting Started](https://github.com/bjornfix/mcp-expose-abilities/wiki/Getting-Started)
-- [Install Order and Dependencies](https://github.com/bjornfix/mcp-expose-abilities/wiki/Install-Order-and-Dependencies)
-
-If you are using an AI agent, the simplest instruction is often just:
-
-- `Read https://github.com/bjornfix/mcp-expose-abilities and figure out the stack before making changes.`
+- [Plugin page](https://devenia.com/plugins/mcp-abilities-blc/)
+- [Stable plugin ZIP](https://downloads.devenia.com/mcp-abilities-blc.zip)
+- [WordPress Abilities API](https://developer.wordpress.org/apis/abilities-api/)
+- [WordPress MCP Adapter](https://github.com/WordPress/mcp-adapter/)
+- [Broken Link Checker](https://wordpress.org/plugins/broken-link-checker/)
 
 ## Start Here
 
 If you are new to the stack, use this order:
 
-1. Install **Abilities API**.
-2. Install **MCP Adapter**.
-3. Install **MCP Expose Abilities**.
-4. Install **MCP Abilities - Broken Link Checker**.
+1. Use WordPress 6.9 or newer so the **WordPress Abilities API** is available.
+2. Install and activate **Broken Link Checker**.
+3. Install and activate **WordPress MCP Adapter**.
+4. Install and activate **MCP Abilities - Broken Link Checker**.
 5. Confirm the new abilities appear in discovery.
-6. Give the agent a clear task that uses this add-on.
+6. Give the agent one clear link inspection or repair task.
 
 If you skip base-stack verification and start with add-ons immediately, troubleshooting gets harder than it needs to be.
 

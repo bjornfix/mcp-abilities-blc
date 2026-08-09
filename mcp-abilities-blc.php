@@ -10,6 +10,7 @@
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  * Requires at least: 6.9
  * Requires PHP: 8.0
+ * Requires Plugins: broken-link-checker
  *
  * @package MCP_Abilities_BLC
  */
@@ -28,7 +29,7 @@ function mcp_blc_check_dependencies(): bool {
 		add_action(
 			'admin_notices',
 			static function () {
-				echo '<div class="notice notice-error"><p><strong>MCP Abilities - Broken Link Checker</strong> requires the Abilities API plugin to be installed and activated.</p></div>';
+				echo '<div class="notice notice-error"><p><strong>MCP Abilities - Broken Link Checker</strong> requires the WordPress Abilities API.</p></div>';
 			}
 		);
 		return false;
